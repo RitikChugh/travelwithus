@@ -30,12 +30,17 @@
                                 <div class="logo"><a href="{% url 'index' %}">Travelwithus</a></div>
                                 <nav class="main_nav">
                                     <ul class="d-flex flex-row align-items-start justify-content-start">
-                                        <li class="active"><a href="{% url 'index' %}">Home</a></li>
-                                        <li><a href="{% url 'about' %}">About us</a></li>
-                                        
-                                        <li><a href="accounts/register">register</a></li>
-                                        <li><a href="{% url 'contact' %}">Contact</a></li>
-                                    </ul>
+										<li class="active"><a href="{% url 'index' %}">Home</a></li>
+										<li><a href="{% url 'about' %}">About us</a></li>
+										{%if user.is_authenticated %}
+										<li>hello,{{user.first_name}}</li>
+										<li><a href="accounts/logout">logout</a></li>
+										{%else%}
+										<li><a href="accounts/register">register</a></li>
+										<li><a href="accounts/login">login</a></li>
+										<li><a href="{% url 'contact' %}">Contact</a></li>
+										{% endif %}
+									</ul>
 							</nav>
 							<div class="header_phone ml-auto">Call us:7889037650</div>
 
@@ -155,6 +160,8 @@
 
 	<!-- Footer -->
 
+	<!-- Footer -->
+
 	<footer class="footer">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/footer_1.jpg' %}" data-speed="0.8"></div>
 		<div class="container">
@@ -168,8 +175,8 @@
 						<div class="newsletter_form_container">
 							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
 								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
-									<div><input type="text" class="newsletter_input newsletter_input_name inpt" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
-									<div><input type="email" class="newsletter_input newsletter_input_email inpt" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
+									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
+									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
 								</div>
 								<div><button class="newsletter_button">subscribe</button></div>
 							</form>
@@ -188,8 +195,8 @@
 								<div class="footer_contact_title">give us a call</div>
 								<div class="footer_contact_list">
 									<ul>
-										<li>Office Landline: +44 5567 32 664 567</li>
-										<li>Mobile: +44 5567 89 3322 332</li>
+										<li>Office Landline: +9877170779</li>
+										<li>Mobile: +917889037650</li>
 									</ul>
 								</div>
 							</div>
@@ -202,7 +209,7 @@
 								<div class="footer_contact_title">come & drop by</div>
 								<div class="footer_contact_list">
 									<ul style="max-width:190px">
-										<li>4124 Barnes Street, Sanford, FL 32771</li>
+										<li>21 modle town, jalandhar, FL 144002</li>
 									</ul>
 								</div>
 							</div>
@@ -215,8 +222,8 @@
 								<div class="footer_contact_title">send us a message</div>
 								<div class="footer_contact_list">
 									<ul>
-										<li>youremail@gmail.com</li>
-										<li>Office@yourbusinessname.com</li>
+										<li>vishuchugh49@gmail.com</li>
+										<li>Office@travelwithus.com</li>
 									</ul>
 								</div>
 							</div>
@@ -226,9 +233,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="col text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+		<div class="col text-center">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> design by <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Ritik chugh</a>
+</div>
 	</footer>
 </div>
 

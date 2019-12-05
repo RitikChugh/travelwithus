@@ -55,3 +55,6 @@ def register(request):
 def logout(request):
     auth.logout(request)
     return redirect("/")
+    
+def contact(request):
+    return render (request,"contact.html")

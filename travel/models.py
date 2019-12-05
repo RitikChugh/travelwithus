@@ -8,3 +8,5 @@ class destination(models.Model):
     price=models.IntegerField()
     offer=models.BooleanField(default=False)
 # Create your models here.
+
+

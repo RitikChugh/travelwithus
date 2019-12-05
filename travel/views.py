@@ -16,6 +16,7 @@ def about(request):
 def contact(request):
     return render (request,"contact.html")
 
+
 def destinations(request):
     dests=destination.objects.all()
     return render (request, "destinations.html",{'dests':dests})

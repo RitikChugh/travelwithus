@@ -188,7 +188,7 @@
 									<div class="intro_icon"><img src="{% static 'images/beach.svg' %}" alt=""></div>
 									<div class="intro_content">
 										<div class="intro_title">Top Destinations</div>
-										<div class="intro_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+										<div class="intro_subtitle"><p></p></div>
 									</div>
 								</div>
 							</div>
@@ -199,7 +199,7 @@
 									<div class="intro_icon"><img src="{% static 'images/wallet.svg' %}" alt=""></div>
 									<div class="intro_content">
 										<div class="intro_title">The Best Prices</div>
-										<div class="intro_subtitle"><p>Sollicitudin mauris lobortis in.</p></div>
+										<div class="intro_subtitle"><p></p></div>
 									</div>
 								</div>
 							</div>
@@ -210,7 +210,7 @@
 									<div class="intro_icon"><img src="{% static 'images/suitcase.svg' %}" alt=""></div>
 									<div class="intro_content">
 										<div class="intro_title">Amazing Services</div>
-										<div class="intro_subtitle"><p>Nulla pretium tincidunt felis, nec.</p></div>
+										<div class="intro_subtitle"><p></p></div>
 									</div>
 								</div>
 							</div>
@@ -244,9 +244,9 @@
 								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="{% url 'destinations' %}">{{dest.name}}</a></div>
+								<div class="destination_title"><a href="#">{{dest.name}}</a></div>
 								<div class="destination_subtitle"><p>{{dest.desc}}</p></div>
-								<div class="destination_price">From ${{dest.price}}</div>
+								<div class="destination_price">From ₹{{dest.price}}</div>
 							</div>
 						</div>
 						{% endfor %}
@@ -265,7 +265,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_subtitle">simply amazing places</div>
-					<div class="section_title"><h2>Testimonials</h2></div>
+					<div class="section_title"><h2></h2></div>
 				</div>
 			</div>
 			<div class="row testimonials_row">
@@ -277,33 +277,33 @@
 							
 							<!-- Slide -->
 							<div class="owl-item text-center">
-								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial">“THE WORLD IS A BOOK AND THOSE WHO DO NOT TRAVEL READ ONLY A PAGE.”</div>
 								<div class="testimonial_author">
 									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-										<div>john turner,</div>
-										<div>client</div>
+										<div></div>
+										<div></div>
 									</div>
 								</div>
 							</div>
 
 							<!-- Slide -->
 							<div class="owl-item text-center">
-								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial">“TAKE ONLY MEMORIES, LEAVE ONLY FOOTPRINTS”</div>
 								<div class="testimonial_author">
 									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-										<div>john turner,</div>
-										<div>client</div>
+										<div></div>
+										<div></div>
 									</div>
 								</div>
 							</div>
 
 							<!-- Slide -->
 							<div class="owl-item text-center">
-								<div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.</div>
+								<div class="testimonial">“FEAR IS ONLY TEMPORARY. REGRETS LAST FOREVER.”</div>
 								<div class="testimonial_author">
 									<div class="testimonial_author_content d-flex flex-row align-items-end justify-content-start">
-										<div>john turner,</div>
-										<div>client</div>
+										<div></div>
+										<div></div>
 									</div>
 								</div>
 							</div>
@@ -315,9 +315,9 @@
 		</div>
 		<div class="test_nav">
 			<ul class="d-flex flex-column align-items-end justify-content-end">
-				<li><a href="#">City Breaks Clients<span>01</span></a></li>
-				<li><a href="#">Cruises Clients<span>02</span></a></li>
-				<li><a href="#">All Inclusive Clients<span>03</span></a></li>
+				<li><a href="#"><span>01</span></a></li>
+				<li><a href="#"><span>02</span></a></li>
+				<li><a href="#"><span>03</span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -335,8 +335,8 @@
 							<div class="news_post_image"><img src="{% static 'images/news_1.jpg' %}" alt=""></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
-									<div>02</div>
-									<div>june</div>
+									<div></div>
+									<div></div>
 								</div>
 								<div class="news_post_title"><a href="#">Best tips to travel light</a></div>
 								<div class="news_post_category">
@@ -345,7 +345,9 @@
 									</ul>
 								</div>
 								<div class="news_post_text">
-									<p>Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo. Vivamus massa.Tempor massa et laoreet.</p>
+									<p>Eat the local food. ...
+										Plan as little as possible. ...
+										Travel insurance is everything. ...</p>
 								</div>
 							</div>
 						</div>
@@ -355,8 +357,8 @@
 							<div class="news_post_image"><img src="{% static 'images/news_2.jpg' %}" alt=""></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
-									<div>01</div>
-									<div>june</div>
+									<div></div>
+									<div></div>
 								</div>
 								<div class="news_post_title"><a href="#">Best tips to travel light</a></div>
 								<div class="news_post_category">
@@ -365,7 +367,9 @@
 									</ul>
 								</div>
 								<div class="news_post_text">
-									<p>Tempor massa et laoreet malesuada. Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.</p>
+									<p>Carry around spare passport photos. ...
+										Keep everything important in your daypack. ...
+										Wear sunscreen every day. ..</p>
 								</div>
 							</div>
 						</div>
@@ -375,8 +379,8 @@
 							<div class="news_post_image"><img src="{% static 'images/news_3.jpg' %}" alt=""></div>
 							<div class="news_post_content">
 								<div class="news_post_date d-flex flex-row align-items-end justify-content-start">
-									<div>29</div>
-									<div>may</div>
+									<div></div>
+									<div></div>
 								</div>
 								<div class="news_post_title"><a href="#">Best tips to travel light</a></div>
 								<div class="news_post_category">
@@ -385,7 +389,8 @@
 									</ul>
 								</div>
 								<div class="news_post_text">
-									<p>Vivamus massa.Tempor massa et laoreet malesuada. Aliquam nulla nisl, accumsan sit amet mattis.</p>
+									<p>Take more photos of yourself. ...
+										Learn a few words of the language in every country you visit.</p>
 								</div>
 							</div>
 						</div>
@@ -406,8 +411,8 @@
 						<div class="travello_container">
 							<a href="#">
 								<div class="d-flex flex-column align-items-center justify-content-end">
-									<span class="travello_title">Get a 20% Discount</span>
-									<span class="travello_subtitle">Buy Your Vacation Online Now</span>
+									<span class="travello_title">call us for booking</span>
+									<span class="travello_subtitle">Buy Now</span>
 								</div>
 							</a>
 						</div>
@@ -452,8 +457,8 @@
 								<div class="footer_contact_title">give us a call</div>
 								<div class="footer_contact_list">
 									<ul>
-										<li>Office Landline: +44 5567 32 664 567</li>
-										<li>Mobile: +44 5567 89 3322 332</li>
+										<li>Office Landline: +9877170779</li>
+										<li>Mobile: +917889037650</li>
 									</ul>
 								</div>
 							</div>
@@ -466,7 +471,7 @@
 								<div class="footer_contact_title">come & drop by</div>
 								<div class="footer_contact_list">
 									<ul style="max-width:190px">
-										<li>4124 Barnes Street, Sanford, FL 32771</li>
+										<li>21 modle town, jalandhar, FL 144002</li>
 									</ul>
 								</div>
 							</div>
@@ -479,8 +484,8 @@
 								<div class="footer_contact_title">send us a message</div>
 								<div class="footer_contact_list">
 									<ul>
-										<li>youremail@gmail.com</li>
-										<li>Office@yourbusinessname.com</li>
+										<li>vishuchugh49@gmail.com</li>
+										<li>Office@travelwithus.com</li>
 									</ul>
 								</div>
 							</div>
@@ -490,12 +495,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="col text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+		<div class="col text-center">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> design by <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">Ritik chugh</a>
+</div>
 	</footer>
 </div>
-<h3>hello</h3>>
 <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
 <script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
 <script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
