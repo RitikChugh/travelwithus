@@ -18,7 +18,7 @@ def contact(request):
 
 
 def destinations(request):
-    dests=destination.objects.all()
+    dests=destination.objects.all ()
     return render (request, "destinations.html",{'dests':dests})
 
 # Create your views here.
